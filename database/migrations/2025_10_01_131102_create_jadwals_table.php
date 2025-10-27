@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('kode', 100);
             $table->string('asal', 100);
-            $table->string('tujuan', 100);
+            $table->string('tujuan', 100);   
             $table->foreignId('transportasi_id')->constrained();
             $table->timestamps();
         });

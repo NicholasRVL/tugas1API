@@ -15,7 +15,7 @@ class JadwalController extends Controller
      */
     public function index()
     {
-         $jadwal = Jadwal::with('transportasi')->get();;
+        $jadwal = Jadwal::with('transportasi')->get();;
         return response()->json($jadwal, 200);
     }
 
